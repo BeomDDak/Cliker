@@ -6,27 +6,19 @@ using UnityEngine.UI;
 
 public class MapChoice : MonoBehaviour
 {
-    
     int maxPage = 5;
     int minPage = 0;
     int currentPage = 0;
     public GameObject[] arrChoiceMaps;
     public GameObject[] arrConfirmMap;
-
     public Button nextBtn, prevBtn,selectMapBtn,startBtn;
-    // Start is called before the first frame update
+
     void Start()
     {
         nextBtn.onClick.AddListener(NextPage);
         prevBtn.onClick.AddListener(PrevPage);
         selectMapBtn.onClick.AddListener(SelectMap);
         startBtn.onClick.AddListener(StartGame);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     void NextPage()
